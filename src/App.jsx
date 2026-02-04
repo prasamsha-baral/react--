@@ -8,7 +8,7 @@ function App() {
 
 const users= [
   {
-    "name": "Prasamsha Baral",
+    "name": "Pooja Sharma",
     "city": "Pokhara",
     "age": 20,
     "profession": "Frontend Developer",
@@ -71,10 +71,15 @@ users.forEach(function(elem){
   return (
     <>
      <Navbar/> 
+     <div className='p-5'>
+      {users.map(function(elem){
+        return  <Cards {...elem} />
+      })}
+     </div>
 
     <div>
-      <Cards a='prasamsha'/>
-      <Cards a='prasamsha'/>
+      <Cards a='' />
+      <Cards a=''/>
     </div>
      
      
